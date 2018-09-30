@@ -37,11 +37,11 @@ namespace NEO_test_tools
             JArray JAoldUTXOs = new JArray();
             if (comboBox1.SelectedIndex == 0)
             {
-                JAoldUTXOs = mh.GetData(mh.mongodbConnStr_testnet, mh.mongodbDatabase_testnet, "utxo", "{addr:'" + txtAddr.Text + "',used:''}", "{value:-1}");
+                JAoldUTXOs = mh.GetData(mh.mongodbConnStr_testnet, mh.mongodbDatabase_testnet, "utxo", "{addr:'" + txtAddr.Text + "',asset:'0x602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7',used:''}", "{value:-1}");
             }
             else
             {
-                JAoldUTXOs = mh.GetData(mh.mongodbConnStr_mainnet, mh.mongodbDatabase_mainnet, "utxo", "{addr:'" + txtAddr.Text + "',used:''}", "{value:-1}");
+                JAoldUTXOs = mh.GetData(mh.mongodbConnStr_mainnet, mh.mongodbDatabase_mainnet, "utxo", "{addr:'" + txtAddr.Text + "',asset:'0x602c79718b16e442de58778e148d0b1084e3b2dffd5de6b7b16cee7969282de7',used:''}", "{value:-1}");
             }
             
 
